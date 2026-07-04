@@ -6,19 +6,83 @@
     <title>مطعم القصر | Royal Palace</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap');
-        *{margin:0; padding:0; box-sizing:border-box; font-family:'Cairo', sans-serif;}
+        *{margin:0; padding:0; box-sizing:border-box; font-family:'Cairo', sans-serif; scroll-behavior: smooth;}
         body{background:#0a0a0a; color:#fff;}
-        .hero{background:linear-gradient(rgba(0,0,0,0.6), rgba(155,89,182,0.4)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070') center/cover; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center;}
-        .hero h1{font-size:3.5em; color:#9b59b6; text-shadow:0 0 20px #9b59b6; margin-bottom:10px;}
-        .hero p{font-size:1.3em; margin-bottom:30px;}
-        .btn{background:#9b59b6; color:#000; padding:15px 40px; border-radius:50px; text-decoration:none; font-weight:900; font-size:1.1em; transition:0.3s;}
-        .btn:hover{box-shadow:0 0 25px #9b59b6; transform:scale(1.05);}
-        .menu{padding:60px 20px; text-align:center;}
-        .menu h2{color:#9b59b6; font-size:2.5em; margin-bottom:40px;}
-        .menu-grid{display:flex; flex-wrap:wrap; justify-content:center; gap:20px; max-width:1000px; margin:auto;}
-        .menu-item{background:#111; border:2px solid #9b59b6; border-radius:15px; padding:20px; width:300px; transition:0.3s;}
-        .menu-item:hover{transform:translateY(-5px); box-shadow:0 0 20px #9b59b6;}
-        .menu-item h3{color:#00ff88; margin-bottom:10px;}
+        
+        .hero{
+            background:linear-gradient(rgba(0,0,0,0.6), rgba(155,89,182,0.4)), url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=2070') center/cover; 
+            height:100vh; 
+            display:flex; 
+            flex-direction:column; 
+            justify-content:center; 
+            align-items:center; 
+            text-align:center;
+        }
+        .hero h1{
+            font-size:3.5em; 
+            color:#9b59b6; 
+            text-shadow:0 0 20px #9b59b6; 
+            margin-bottom:10px;
+        }
+        .hero p{
+            font-size:1.3em; 
+            margin-bottom:30px;
+        }
+        .btn{
+            background:#9b59b6; 
+            color:#000; 
+            padding:15px 40px; 
+            border-radius:50px; 
+            text-decoration:none; 
+            font-weight:900; 
+            font-size:1.1em; 
+            transition:0.3s;
+        }
+        .btn:hover{
+            box-shadow:0 0 25px #9b59b6; 
+            transform:scale(1.05);
+        }
+        
+        .menu{
+            padding:60px 20px; 
+            text-align:center;
+        }
+        .menu h2{
+            color:#9b59b6; 
+            font-size:2.5em; 
+            margin-bottom:40px;
+        }
+        .menu-grid{
+            display:flex; 
+            flex-wrap:wrap; 
+            justify-content:center; 
+            gap:20px; 
+            max-width:1000px; 
+            margin:auto;
+        }
+        .menu-item{
+            background:#111; 
+            border:2px solid #9b59b6; 
+            border-radius:15px; 
+            padding:20px; 
+            width:300px; 
+            transition:0.3s;
+        }
+        .menu-item:hover{
+            transform:translateY(-5px); 
+            box-shadow:0 0 20px #9b59b6;
+        }
+        .menu-item h3{
+            color:#00ff88; 
+            margin-bottom:10px;
+        }
+        
+        .footer{
+            text-align:center; 
+            padding:30px; 
+            background:#000; 
+            color:#9b59b6;
+        }
     </style>
 </head>
 <body>
@@ -44,6 +108,10 @@
                 <p>شباكية + غريبة + كعب غزال</p>
             </div>
         </div>
+    </div>
+    
+    <div class="footer">
+        <p>© 2026 مطعم القصر | تصميم: Sohail Alaoui</p>
     </div>
 </body>
 </html>
