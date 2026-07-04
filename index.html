@@ -3,22 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SOHAIL ALAOUI | مصمم مواقع</title>
+    <title>سهيل العلاوي | مصمم مواقع</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
+        
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
+            font-family: 'Cairo', sans-serif;
         }
         body {
             background: #000;
             color: #fff;
             text-align: center;
             padding: 50px 20px;
+            background-image: 
+                radial-gradient(circle at 20% 20%, #9b59b6 0%, transparent 50%),
+                radial-gradient(circle at 80% 80%, #9b59b6 0%, transparent 50%);
         }
         .container {
-            max-width: 700px;
+            max-width: 750px;
             margin: auto;
         }
         .profile-img {
@@ -28,60 +33,99 @@
             border: 4px solid #9b59b6;
             object-fit: cover;
             margin-bottom: 20px;
-            box-shadow: 0 0 20px #9b59b6;
+            box-shadow: 0 0 30px #9b59b6;
+            animation: glow 2s ease-in-out infinite alternate;
+        }
+        @keyframes glow {
+            from { box-shadow: 0 0 20px #9b59b6; }
+            to { box-shadow: 0 0 40px #9b59b6; }
         }
         h1 {
-            font-size: 2.8em;
+            font-size: 3em;
             color: #9b59b6;
             margin-bottom: 10px;
+            text-shadow: 0 0 15px #9b59b6;
         }
-        p {
-            font-size: 1.2em;
+        .subtitle {
+            font-size: 1.3em;
             color: #ccc;
             margin-bottom: 30px;
         }
         .btn {
-            background: white;
-color: #000;
+            background: linear-gradient(135deg, #9b59b6, #8e44ad);
             color: #fff;
-            padding: 12px 30px;
-            border-radius: 25px;
+            padding: 14px 35px;
+            border-radius: 30px;
             text-decoration: none;
             font-weight: bold;
+            font-size: 1.1em;
             display: inline-block;
             margin: 10px;
             transition: 0.3s;
             border: 2px solid #9b59b6;
+            box-shadow: 0 0 15px #9b59b6;
         }
         .btn:hover {
-            background: #000;
-            color: #9b59b6;
+            transform: translateY(-3px);
+            box-shadow: 0 0 25px #9b59b6;
         }
         .about {
             background: #111;
-            padding: 30px;
-            border-radius: 15px;
+            padding: 35px;
+            border-radius: 20px;
             margin: 40px 0;
             text-align: right;
-            border: 1px solid #9b59b6;
+            border: 2px solid #9b59b6;
+            box-shadow: 0 0 20px rgba(155, 89, 182, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+        .about::before {
+            content: "</>";
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 2em;
+            color: #9b59b6;
+            opacity: 0.2;
         }
         .about h2 {
             color: #9b59b6;
             margin-bottom: 15px;
+            font-size: 1.8em;
+        }
+        .skills {
+            margin: 20px 0;
+        }
+        .skill-tag {
+            background: #9b59b6;
+            color: #000;
+            padding: 5px 15px;
+            border-radius: 15px;
+            display: inline-block;
+            margin: 5px;
+            font-weight: bold;
         }
         .social h2 {
             color: #9b59b6;
             margin-bottom: 15px;
+            font-size: 1.8em;
         }
         .social a {
             color: #9b59b6;
             text-decoration: none;
             margin: 0 15px;
-            font-size: 1.1em;
+            font-size: 1.2em;
             font-weight: bold;
+            transition: 0.3s;
         }
         .social a:hover {
             color: #fff;
+            text-shadow: 0 0 10px #9b59b6;
+        }
+        .code-icon {
+            font-size: 2em;
+            margin: 10px;
         }
     </style>
 </head>
@@ -89,22 +133,34 @@ color: #000;
     <div class="container">
         <img src="me.png" class="profile-img" alt="صورتي">
         
-        <h1>SOHAIL ALAOUI</h1>
-        <p>مصمم مواقع ويب | مطور واجهات</p>
+        <h1>سهيل العلاوي</h1>
+        <p class="subtitle">مصمم مواقع ويب | مطور واجهات</p>
         
-        <a href="projects.html" class="btn">شوف الخدمة ديالي</a>
-        <a href="#contact" class="btn">تواصل معايا</a>
+        <div class="code-icon">💻 ⚡ { } </div>
+        
+        <a href="projects.html" class="btn">📂 شوف الخدمة ديالي</a>
+        <a href="#contact" class="btn">📞 تواصل معايا</a>
 
         <div class="about">
             <h2>عليا</h2>
-            <p>السلام! انا سوهيل العلاوي. كنصمم مواقع عصرية وسريعة بالستيل البنفسجي. الهدف ديالي هو نحول الافكار ديالك لموقع واقعي و زوين. مرحبا بيك فالبورتفوليو ديالي.</p>
+            <p>
+                السلام! انا <b>سهيل العلاوي</b>. كنصمم مواقع عصرية وسريعة بالستيل البنفسجي 🔮<br><br>
+                الهدف ديالي هو نحول الافكار ديالك لموقع واقعي و زوين. كنخدم بكل حب وتفاصيل.
+                <br><br>مرحبا بيك فالبورتفوليو ديالي.
+            </p>
+            <div class="skills">
+                <span class="skill-tag">HTML</span>
+                <span class="skill-tag">CSS</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Responsive</span>
+            </div>
         </div>
 
         <div class="social" id="contact">
             <h2>تواصل معايا</h2>
-            <a href="https://wa.me/212785330968" target="_blank">واتساب</a>
-            <a href="https://www.instagram.com/souhail_alaoui_10" target="_blank">انستغرام</a>
-            <a href="mailto:ffmodilf@gmail.com">الايميل</a>
+            <a href="https://wa.me/212785330968" target="_blank">💬 واتساب</a>
+            <a href="https://www.instagram.com/souhail_alaoui_10" target="_blank">📸 انستغرام</a>
+            <a href="mailto:ffmodilf@gmail.com">📧 الايميل</a>
         </div>
     </div>
 </body>
