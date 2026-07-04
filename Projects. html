@@ -7,74 +7,44 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700;900&display=swap');
         *{margin:0; padding:0; box-sizing:border-box; font-family:'Cairo', sans-serif;}
-        body{
-            background:#0a0a0a; 
-            color:#fff; 
-            text-align:center; 
-            padding:60px 20px;
-            min-height:100vh;
-        }
-        .container{max-width:700px; margin:auto;}
+        body{background:#0a0a0a; color:#fff; text-align:center; padding:50px 15px;}
+        h1{font-size:2.5em; color:#00ff88; margin-bottom:40px; font-weight:900;}
 
-        h1{
-            font-size:2.8em; 
-            color:#00ff88; 
-            margin-bottom:50px; 
-            font-weight:900;
-            text-shadow:0 0 20px rgba(0,255,136,0.5);
-        }
-        
-        .projects-grid{
-            display:flex;
-            flex-direction:column;
-            gap:25px;
-            margin-bottom:40px;
-        }
-
-        /* الكارت بحال الصورة */
-        .project-card{
+        .card{
             background:#111;
             border:2px solid #00ff88;
-            border-radius:18px;
-            padding:30px 25px;
+            border-radius:15px;
+            padding:25px;
+            margin:20px auto;
+            max-width:600px;
             transition:0.3s;
-            cursor:pointer;
             text-decoration:none;
             display:block;
-            box-shadow:0 0 15px rgba(0,255,136,0.1);
         }
-        .project-card:hover{
-            transform:scale(1.02);
-            background:#151515;
-            box-shadow:0 0 30px rgba(0,255,136,0.4);
-            border-color:#00ff88;
-        }
-        .project-card h3{
-            color:#00ff88; 
-            font-size:1.6em; 
-            margin-bottom:15px;
-            font-weight:700;
-        }
-        .project-card p{
-            color:#ccc; 
-            font-size:1.05em;
-            line-height:1.8;
-        }
+        .card:hover{background:#1a1a1a; transform:scale(1.02); box-shadow:0 0 25px #00ff88;}
+        .card h2{color:#00ff88; font-size:1.7em; margin-bottom:10px;}
+        .card p{color:#ddd; font-size:1.1em;}
 
-        /* زر الرجوع الاخضر الكبير */
-        .back-btn{
-            background:#00ff88;
-            color:#000;
-            padding:16px 40px;
-            border-radius:50px;
-            text-decoration:none;
-            font-weight:900;
-            font-size:1.2em;
-            display:inline-block;
-            margin-top:20px;
-            transition:0.3s;
-            box-shadow:0 0 20px rgba(0,255,136,0.3);
+        .btn-back{
+            background:#00ff88; color:#000; padding:15px 35px; border-radius:50px;
+            text-decoration:none; font-weight:900; font-size:1.1em; display:inline-block; margin-top:30px;
         }
-        .back-btn:hover{
-            transform:scale(1.05);
-            box-shadow:
+        .btn-back:hover{box-shadow:0 0 20px #00ff88;}
+    </style>
+</head>
+<body>
+    <h1>أعمالي السابقة</h1>
+
+    <a href="https://ffmodilf-design.github.io/-ffmodilf-design.github.io/#" target="_blank" class="card">
+        <h2>موقع متجر الكتروني</h2>
+        <p>تصميم متجر عصري 100% متجاوب مع<br>الهاتف.</p>
+    </a>
+
+    <div class="card">
+        <h2>موقع شركة تقنية</h2>
+        <p>صفحة تعريفية احترافية لشركة مع قسم<br>الخدمات.</p>
+    </div>
+
+    <a href="index.html" class="btn-back">العودة للصفحة الرئيسية</a>
+</body>
+</html>
