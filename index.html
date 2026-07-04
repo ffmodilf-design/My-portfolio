@@ -106,6 +106,14 @@
             margin: 5px;
             font-weight: bold;
         }
+
+        /* الكود الجديد ديال المهارات بالنسب */
+        .skill-item{margin-bottom:20px; text-align:right;}
+        .skill-item p{display:flex; justify-content:space-between; margin-bottom:8px; font-weight:bold; color:#fff;}
+        .skill-item p span{color:#9b59b6;}
+        .skill-bar{background:#222; border-radius:10px; height:12px; overflow:hidden; border:1px solid #9b59b6;}
+        .skill-progress{background:linear-gradient(90deg, #9b59b6, #00ff88); height:100%; border-radius:10px; animation: fillBar 2s ease-out;}
+        @keyframes fillBar{from{width:0;} }
         
         /* الإطارات الجديدة للتواصل */
         .social h2 {
@@ -181,6 +189,42 @@
             </div>
         </div>
 
+        <!-- قسم المهارات الجديد -->
+        <div class="about">
+            <h2>المهارات ديالي</h2>
+            
+            <div class="skill-item">
+                <p>HTML5 <span>95%</span></p>
+                <div class="skill-bar"><div class="skill-progress" style="width:95%"></div></div>
+            </div>
+
+            <div class="skill-item">
+                <p>CSS3 <span>90%</span></p>
+                <div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
+            </div>
+
+            <div class="skill-item">
+                <p>JavaScript <span>85%</span></p>
+                <div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
+            </div>
+
+            <div class="skill-item">
+                <p>Responsive Design <span>95%</span></p>
+                <div class="skill-bar"><div class="skill-progress" style="width:95%"></div></div>
+            </div>
+
+            <div class="skill-item">
+                <p>GitHub <span>80%</span></p>
+                <div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div>
+            </div>
+
+            <div class="skill-item">
+                <p>UI/UX <span>88%</span></p>
+                <div class="skill-bar"><div class="skill-progress" style="width:88%"></div></div>
+            </div>
+
+        </div>
+
         <div class="social" id="contact">
             <h2>تواصل معايا</h2>
             <div class="contact-box">
@@ -201,7 +245,7 @@
                     <div class="icon">📧</div>
                     <a href="mailto:ffmodilf@gmail.com">الايميل</a>
                     <p>ffmodilf@gmail.com</p>
-                </div>
+                </</div>
 
             </div>
         </div>
