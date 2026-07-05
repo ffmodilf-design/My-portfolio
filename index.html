@@ -1,254 +1,33 @@
-<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>souhail alaoui| مصمم مواقع</title>
+    <title>Souhail Alaoui - Portfolio</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700&display=swap');
-        
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Cairo', sans-serif;
-        }
-        body {
-            background: #000;
-            color: #fff;
-            text-align: center;
-            padding: 50px 20px;
-            background-image: 
-                radial-gradient(circle at 20% 20%, #9b59b6 0%, transparent 50%),
-                radial-gradient(circle at 80% 80%, #9b59b6 0%, transparent 50%);
-        }
-        .container {
-            max-width: 750px;
-            margin: auto;
-        }
-        .profile-img {
-            width: 180px;
-            height: 180px;
-            border-radius: 50%;
-            border: 4px solid #9b59b6;
-            object-fit: cover;
-            margin-bottom: 20px;
-            box-shadow: 0 0 30px #9b59b6;
-            animation: glow 2s ease-in-out infinite alternate;
-        }
-        @keyframes glow {
-            from { box-shadow: 0 0 20px #9b59b6; }
-            to { box-shadow: 0 0 40px #9b59b6; }
-        }
-        h1 {
-            font-size: 3em;
-            color: #9b59b6;
-            margin-bottom: 10px;
-            text-shadow: 0 0 15px #9b59b6;
-        }
-        .subtitle {
-            font-size: 1.3em;
-            color: #ccc;
-            margin-bottom: 30px;
-        }
-        .btn {
-            background: linear-gradient(135deg, #9b59b6, #8e44ad);
-            color: #fff;
-            padding: 14px 35px;
-            border-radius: 30px;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-            display: inline-block;
-            margin: 10px;
-            transition: 0.3s;
-            border: 2px solid #9b59b6;
-            box-shadow: 0 0 15px #9b59b6;
-        }
-        .btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 0 25px #9b59b6;
-        }
-        .about {
-            background: #111;
-            padding: 35px;
-            border-radius: 20px;
-            margin: 40px 0;
-            text-align: right;
-            border: 2px solid #9b59b6;
-            box-shadow: 0 0 20px rgba(155, 89, 182, 0.3);
-            position: relative;
-            overflow: hidden;
-        }
-        .about::before {
-            content: "</>";
-            position: absolute;
-            top: 10px;
-            left: 20px;
-            font-size: 2em;
-            color: #9b59b6;
-            opacity: 0.2;
-        }
-        .about h2 {
-            color: #9b59b6;
-            margin-bottom: 15px;
-            font-size: 1.8em;
-        }
-        .skills {
-            margin: 20px 0;
-        }
-        .skill-tag {
-            background: #9b59b6;
-            color: #000;
-            padding: 5px 15px;
-            border-radius: 15px;
-            display: inline-block;
-            margin: 5px;
-            font-weight: bold;
-        }
-
-        /* الكود الجديد ديال المهارات بالنسب */
-        .skill-item{margin-bottom:20px; text-align:right;}
-        .skill-item p{display:flex; justify-content:space-between; margin-bottom:8px; font-weight:bold; color:#fff;}
-        .skill-item p span{color:#9b59b6;}
-        .skill-bar{background:#222; border-radius:10px; height:12px; overflow:hidden; border:1px solid #9b59b6;}
-        .skill-progress{background:linear-gradient(90deg, #9b59b6, #00ff88); height:100%; border-radius:10px; animation: fillBar 2s ease-out;}
-        @keyframes fillBar{from{width:0;} }
-        
-        /* الإطارات الجديدة للتواصل */
-        .social h2 {
-            color: #9b59b6;
-            margin-bottom: 25px;
-            font-size: 1.8em;
-        }
-        .contact-box {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-        }
-        .contact-card {
-            background: #111;
-            border: 2px solid #9b59b6;
-            border-radius: 15px;
-            padding: 20px;
-            width: 200px;
-            transition: 0.3s;
-            box-shadow: 0 0 15px rgba(155, 89, 182, 0.2);
-        }
-        .contact-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 0 25px #9b59b6;
-            border-color: #fff;
-        }
-        .contact-card .icon {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .contact-card a {
-            color: #9b59b6;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1.1em;
-            display: block;
-        }
-        .contact-card a:hover {
-            color: #fff;
-        }
-        .contact-card p {
-            color: #aaa;
-            font-size: 0.9em;
-            margin-top: 5px;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background: #111; color: white; }
+        .hero { height: 100vh; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; padding: 20px; }
+        .hero h1 { font-size: 55px; color: gold; margin-bottom: 10px; }
+        .hero h2 { font-size: 25px; color: #00ff88; margin-bottom: 20px; }
+        .hero p { font-size: 18px; max-width: 600px; margin-bottom: 30px; color: #ccc; }
+        .btn { padding: 15px 45px; background: gold; color: #111; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 20px; transition: 0.3s; }
+        .btn:hover { background: #00ff88; transform: scale(1.05); }
+        .footer { text-align: center; padding: 20px; background: #000; color: #777; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="me.png" class="profile-img" alt="صورتي">
-        
-        <h1>سهيل العلاوي</h1>
-        <p class="subtitle">مصمم مواقع ويب | مطور واجهات</p>
-        
-        <div style="font-size: 2em; margin: 10px;">💻 ⚡ { } </div>
-        
-        <a href="projects.html" class="btn">📂 شوف الخدمة ديالي</a>
-        <a href="#contact" class="btn">📞 تواصل معايا</a>
 
-        <div class="about">
-            <h2>عليا</h2>
-            <p>
-                السلام! انا <b>سهيل العلاوي</b>. كنصمم مواقع عصرية وسريعة بالستيل البنفسجي 🔮<br><br>
-                الهدف ديالي هو نحول الافكار ديالك لموقع واقعي و زوين. كنخدم بكل حب وتفاصيل.
-                <br><br>مرحبا بيك فالبورتفوليو ديالي.
-            </p>
-            <div class="skills">
-                <span class="skill-tag">HTML</span>
-                <span class="skill-tag">CSS</span>
-                <span class="skill-tag">JavaScript</span>
-                <span class="skill-tag">Responsive</span>
-            </div>
-        </div>
-
-        <!-- قسم المهارات الجديد -->
-        <div class="about">
-            <h2>المهارات ديالي</h2>
-            
-            <div class="skill-item">
-                <p>HTML5 <span>95%</span></p>
-                <div class="skill-bar"><div class="skill-progress" style="width:95%"></div></div>
-            </div>
-
-            <div class="skill-item">
-                <p>CSS3 <span>90%</span></p>
-                <div class="skill-bar"><div class="skill-progress" style="width:90%"></div></div>
-            </div>
-
-            <div class="skill-item">
-                <p>JavaScript <span>85%</span></p>
-                <div class="skill-bar"><div class="skill-progress" style="width:85%"></div></div>
-            </div>
-
-            <div class="skill-item">
-                <p>Responsive Design <span>95%</span></p>
-                <div class="skill-bar"><div class="skill-progress" style="width:95%"></div></div>
-            </div>
-
-            <div class="skill-item">
-                <p>GitHub <span>80%</span></p>
-                <div class="skill-bar"><div class="skill-progress" style="width:80%"></div></div>
-            </div>
-
-            <div class="skill-item">
-                <p>UI/UX <span>88%</span></p>
-                <div class="skill-bar"><div class="skill-progress" style="width:88%"></div></div>
-            </div>
-
-        </div>
-
-        <div class="social" id="contact">
-            <h2>تواصل معايا</h2>
-            <div class="contact-box">
-                
-                <div class="contact-card">
-                    <div class="icon">💬</div>
-                    <a href="https://wa.me/212785330968" target="_blank">واتساب</a>
-                    <p>212785330968</p>
-                </div>
-
-                <div class="contact-card">
-                    <div class="icon">📸</div>
-                    <a href="https://www.instagram.com/souhail_alaoui_10" target="_blank">انستغرام</a>
-                    <p>@souhail_alaoui_10</p>
-                </div>
-
-                <div class="contact-card">
-                    <div class="icon">📧</div>
-                    <a href="mailto:ffmodilf@gmail.com">الايميل</a>
-                    <p>ffmodilf@gmail.com</p>
-                </</div>
-
-            </div>
-        </div>
+    <div class="hero">
+        <h1>Souhail Alaoui</h1>
+        <h2>مطور مواقع ويب</h2>
+        <p>كنصمم مواقع عصرية واحترافية للشركات والمطاعم والمتاجر. 
+        الهدف ديالي هو نحول الفكرة ديالك لموقع يبهر العملاء.</p>
+        <a href="projects.html" class="btn">شوف الخدمة ديالي</a>
     </div>
+
+    <div class="footer">
+        <p>© 2026 Souhail Alaoui. جميع الحقوق محفوظة</p>
+    </div>
+
 </body>
 </html>
