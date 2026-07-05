@@ -1,101 +1,66 @@
-
-<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LE ROYAL | مطعم عصري</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+    <title>LE ROYAL - مطعم فاخر</title>
     <style>
-        *{margin:0; padding:0; box-sizing:border-box; font-family:'Cairo', sans-serif; scroll-behavior:smooth;}
-        body{background:#0a0a0a; color:#fff;}
-        :root{--gold:#D4AF37; --black:#0a0a0a;}
-        
-        header{position:fixed; width:100%; background:rgba(10,10,10,0.9); padding:20px 5%; display:flex; justify-content:space-between; align-items:center; z-index:1000; border-bottom:1px solid var(--gold);}
-        header h1{color:var(--gold); font-size:1.8em;}
-        header nav a{color:#fff; text-decoration:none; margin:0 15px; transition:0.3s;}
-        header nav a:hover{color:var(--gold);}
-        
-        .hero{background:url('https://images.unsplash.com/photo-1555396273-367ea4eb4db5?q=80&w=2070') center/cover; height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative;}
-        .hero::after{content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.6);}
-        .hero *{position:relative; z-index:2;}
-        .hero h2{font-size:3.5em; color:var(--gold); margin-bottom:15px;}
-        .hero p{font-size:1.2em; margin-bottom:30px;}
-        .btn{background:var(--gold); color:#000; padding:15px 40px; border-radius:5px; text-decoration:none; font-weight:900; font-size:1.1em; transition:0.3s;}
-        .btn:hover{background:#fff; transform:scale(1.05);}
-        
-        section{padding:80px 5%;}
-        .section-title{text-align:center; font-size:2.5em; color:var(--gold); margin-bottom:50px;}
-        
-        .menu-grid{display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:30px;}
-        .menu-card{background:#111; border:1px solid #333; border-radius:10px; overflow:hidden; transition:0.3s;}
-        .menu-card:hover{border-color:var(--gold); transform:translateY(-10px);}
-        .menu-card img{width:100%; height:200px; object-fit:cover;}
-        .menu-card div{padding:20px;}
-        .menu-card h3{color:var(--gold); margin-bottom:10px;}
-        .price{color:var(--gold); font-weight:900; font-size:1.2em; float:left;}
-        
-        .contact{background:#111; text-align:center;}
-        .contact p{font-size:1.2em; margin:10px 0;}
-        
-        footer{text-align:center; padding:30px; background:#000; color:var(--gold); border-top:1px solid var(--gold);}
-        
-        @media(max-width:768px){ header nav{display:none;} .hero h2{font-size:2.2em;} }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Arial', sans-serif; }
+        body { background: #111; color: white; }
+        .hero { height: 90vh; background: url('https://images.unsplash.com/photo-1517248135467-4c7edcad34c4') center/cover; display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; position: relative; }
+        .hero::after { content: ''; position: absolute; top:0; left:0; right:0; bottom:0; background: rgba(0,0,0,0.6); }
+        .hero h1 { font-size: 50px; color: gold; z-index: 2; }
+        .hero p { font-size: 20px; margin: 15px 0; z-index: 2; }
+        .btn { padding: 15px 40px; background: gold; color: #111; text-decoration: none; border-radius: 50px; font-weight: bold; font-size: 18px; z-index: 2; }
+        .section { padding: 60px 20px; max-width: 900px; margin: 0 auto; text-align: center; }
+        .section h2 { color: gold; font-size: 35px; margin-bottom: 30px; }
+        .menu-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .menu-item { background: #222; padding: 20px; border-radius: 15px; border: 1px solid gold; }
+        .menu-item h3 { color: gold; margin-bottom: 10px; }
+        .contact { background: #000; }
+        .contact p { font-size: 18px; margin: 10px 0; }
+        .footer { text-align: center; padding: 20px; background: #000; color: #777; }
+        html { scroll-behavior: smooth; }
     </style>
 </head>
 <body>
-    <header>
-        <h1>LE ROYAL</h1>
-        <nav>
-            <a href="#home">الرئيسية</a>
-            <a href="#menu">المنيو</a>
-            <a href="#contact">اتصل بنا</a>
-        </nav>
-    </header>
 
-    <div class="hero" id="home">
-        <h2>تجربة طعام استثنائية</h2>
+    <div class="hero">
+        <h1>LE ROYAL</h1>
         <p>مطبخ عصري بأجواء فاخرة في قلب مراكش</p>
         <a href="#menu" class="btn">استكشف المنيو</a>
     </div>
 
-    <section id="menu">
-        <h2 class="section-title">قائمتنا المميزة</h2>
+    <div id="menu" class="section">
+        <h2>قائمتنا المميزة</h2>
         <div class="menu-grid">
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=2069" alt="طبق">
-                <div>
-                    <h3>ستيك رويال <span class="price">250 درهم</span></h3>
-                    <p>ستيك لحم مع صلصة الفطر والخضار المشوية</p>
-                </div>
+            <div class="menu-item">
+                <h3>طاجين اللحم بالبرقوق</h3>
+                <p>طاجين مغربي أصيل بطريقة الشاف</p>
+                <p style="color:gold; font-size:20px; margin-top:10px;">120 درهم</p>
             </div>
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1565299624946-b28f40a0ca4b?q=80&w=2081" alt="طبق">
-                <div>
-                    <h3>باستا المأكولات البحرية <span class="price">180 درهم</span></h3>
-                    <p>باستا بالجمبري والكلاماري وصلصة الطماطم</p>
-                </div>
+            <div class="menu-item">
+                <h3>ستيك رويال</h3>
+                <p>ستيك لحم مع صوص الفطر والبطاطس</p>
+                <p style="color:gold; font-size:20px; margin-top:10px;">180 درهم</p>
             </div>
-            <div class="menu-card">
-                <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=2069" alt="طبق">
-                <div>
-                    <h3>طبق السلمون <span class="price">220 درهم</span></h3>
-                    <p>سلمون مشوي مع الليمون والأعشاب</p>
-                </div>
+            <div class="menu-item">
+                <h3>حلويات شرقية</h3>
+                <p>تشكيلة من الحلويات المغربية والشرقية</p>
+                <p style="color:gold; font-size:20px; margin-top:10px;">60 درهم</p>
             </div>
         </div>
-    </section>
+    </div>
 
-    <section class="contact" id="contact">
-        <h2 class="section-title">زورنا</h2>
-        <p>📍 شارع محمد السادس، مراكش</p>
-        <p>📞 +212 6 12 34 56 78</p>
-        <p>⏰ مفتوح يوميا من 12:00 إلى 23:00</p>
-        <a href="tel:+212612345678" class="btn" style="margin-top:20px; display:inline-block;">اتصل الآن</a>
-    </section>
+    <div id="contact" class="section contact">
+        <h2>اتصل بنا</h2>
+        <p>📍 العنوان: شارع محمد السادس، مراكش</p>
+        <p>📞 الهاتف: +212 6 12 34 56 78</p>
+        <p>🕒 مفتوح يوميا: 12:00 - 23:00</p>
+    </div>
 
-    <footer>
-        <p>© 2026 LE ROYAL | تصميم: Sohail Alaoui</p>
-    </footer>
+    <div class="footer">
+        <p>© 2026 LE ROYAL. جميع الحقوق محفوظة. تصميم: Souhail Alaoui</p>
+    </div>
+
 </body>
 </html>
